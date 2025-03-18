@@ -1,7 +1,8 @@
 ﻿
 
 // SolicitarYProcesarNumero(); 
-SolicitarYProcesarDosNumeros();
+// SolicitarYProcesarDosNumeros();
+RaizOalCuadrado();
 
 static void SolicitarYProcesarNumero()
 {
@@ -53,4 +54,23 @@ else
 {
     Console.WriteLine("Entrada no válida para el primer número.");
 }
+}
+static void RaizOalCuadrado()
+{
+    Console.Write("Ingrese un número: ");
+    if (double.TryParse(Console.ReadLine(), out double numero))
+    {
+        if (numero > 0)
+        {
+            Console.WriteLine($"Resultado: {Math.Sqrt(numero)}");
+        }
+        else
+        {
+            Console.WriteLine($"Resultado: {numero * numero}");
+        }
+    }
+    else
+    {
+        Console.WriteLine("Entrada no válida.");
+    }
 }

@@ -11,8 +11,9 @@
 // DiferenciaDeFracciones();
 // PromedioDeCuatro();
 // ElMasPequeñoDe5();
-Vocales();
-BuscadorFactorial();
+// Vocales();
+// BuscadorFactorial();
+InRangeValidator();
 
 static void SolicitarYProcesarNumero()
 {
@@ -264,6 +265,25 @@ static void BuscadorFactorial()
             factorial *= i;
         }
         Console.WriteLine($"Resultado: {factorial}");
+    }
+    else
+    {
+        Console.WriteLine("Entrada no válida.");
+    }
+}
+static void InRangeValidator()
+{
+    Console.Write("Ingrese un número: ");
+    if (int.TryParse(Console.ReadLine(), out int numero))
+    {
+        if (numero >= 10 && numero <= 20)
+        {
+            Console.WriteLine("Resultado: Está en el rango.");
+        }
+        else
+        {
+            Console.WriteLine("Resultado: Fuera del rango.");
+        }
     }
     else
     {

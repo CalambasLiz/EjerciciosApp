@@ -5,8 +5,10 @@
 // RaizOalCuadrado();
 // PerimetroCirculo();
 // DiaDeLaSemana();
-SalarioAnual();
-Buscador();
+// SalarioAnual();
+// Buscador();
+SumaDePares();
+DiferenciaDeFracciones();
 
 static void SolicitarYProcesarNumero()
 {
@@ -152,5 +154,35 @@ static void Buscador()
     else
     {
         Console.WriteLine("Entrada no válida para el primer número.");
+    }
+}
+static void SumaDePares()
+{
+    int suma = 0;
+    for (int i = 2; i <= 50; i += 2)
+    {
+        suma += i;
+    }
+    Console.WriteLine($"Resultado: {suma}");
+}
+
+static void DiferenciaDeFracciones()
+{
+    Console.Write("Ingrese la primera fracción (a/b): ");
+    string[] fraccion1 = Console.ReadLine().Split('/');
+    Console.Write("Ingrese la segunda fracción (c/d): ");
+    string[] fraccion2 = Console.ReadLine().Split('/');
+
+    if (fraccion1.Length == 2 && fraccion2.Length == 2 &&
+        int.TryParse(fraccion1[0], out int a) && int.TryParse(fraccion1[1], out int b) &&
+        int.TryParse(fraccion2[0], out int c) && int.TryParse(fraccion2[1], out int d))
+    {
+        int numerador = a * d - b * c;
+        int denominador = b * d;
+        Console.WriteLine($"Resultado: {numerador}/{denominador}");
+    }
+    else
+    {
+        Console.WriteLine("Entrada no válida.");
     }
 }

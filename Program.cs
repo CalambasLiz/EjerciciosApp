@@ -12,8 +12,8 @@
 // PromedioDeCuatro();
 // ElMasPequeñoDe5();
 // Vocales();
-// BuscadorFactorial();
-InRangeValidator();
+BuscadorFactorial();
+// InRangeValidator();
 
 static void SolicitarYProcesarNumero()
 {

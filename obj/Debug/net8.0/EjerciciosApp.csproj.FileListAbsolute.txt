@@ -1,0 +1,14 @@
+C:\Users\calam\OneDrive\Escritorio\Tarea Liz\EjerciciosApp\bin\Debug\net8.0\EjerciciosApp.exe
+C:\Users\calam\OneDrive\Escritorio\Tarea Liz\EjerciciosApp\bin\Debug\net8.0\EjerciciosApp.deps.json
+C:\Users\calam\OneDrive\Escritorio\Tarea Liz\EjerciciosApp\bin\Debug\net8.0\EjerciciosApp.runtimeconfig.json
+C:\Users\calam\OneDrive\Escritorio\Tarea Liz\EjerciciosApp\bin\Debug\net8.0\EjerciciosApp.dll
+C:\Users\calam\OneDrive\Escritorio\Tarea Liz\EjerciciosApp\bin\Debug\net8.0\EjerciciosApp.pdb
+C:\Users\calam\OneDrive\Escritorio\Tarea Liz\EjerciciosApp\obj\Debug\net8.0\EjerciciosApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\calam\OneDrive\Escritorio\Tarea Liz\EjerciciosApp\obj\Debug\net8.0\EjerciciosApp.AssemblyInfoInputs.cache
+C:\Users\calam\OneDrive\Escritorio\Tarea Liz\EjerciciosApp\obj\Debug\net8.0\EjerciciosApp.AssemblyInfo.cs
+C:\Users\calam\OneDrive\Escritorio\Tarea Liz\EjerciciosApp\obj\Debug\net8.0\EjerciciosApp.csproj.CoreCompileInputs.cache
+C:\Users\calam\OneDrive\Escritorio\Tarea Liz\EjerciciosApp\obj\Debug\net8.0\EjerciciosApp.dll
+C:\Users\calam\OneDrive\Escritorio\Tarea Liz\EjerciciosApp\obj\Debug\net8.0\refint\EjerciciosApp.dll
+C:\Users\calam\OneDrive\Escritorio\Tarea Liz\EjerciciosApp\obj\Debug\net8.0\EjerciciosApp.pdb
+C:\Users\calam\OneDrive\Escritorio\Tarea Liz\EjerciciosApp\obj\Debug\net8.0\EjerciciosApp.genruntimeconfig.cache
+C:\Users\calam\OneDrive\Escritorio\Tarea Liz\EjerciciosApp\obj\Debug\net8.0\ref\EjerciciosApp.dll

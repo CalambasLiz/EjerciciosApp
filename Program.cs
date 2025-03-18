@@ -9,8 +9,10 @@
 // Buscador();
 // SumaDePares();
 // DiferenciaDeFracciones();
-PromedioDeCuatro();
-ElMasPequeñoDe5();
+// PromedioDeCuatro();
+// ElMasPequeñoDe5();
+Vocales();
+BuscadorFactorial();
 
 static void SolicitarYProcesarNumero()
 {
@@ -229,6 +231,39 @@ static void ElMasPequeñoDe5()
     {
         double menor = Math.Min(num1, Math.Min(num2, Math.Min(num3, Math.Min(num4, num5))));
         Console.WriteLine($"Resultado: {menor}");
+    }
+    else
+    {
+        Console.WriteLine("Entrada no válida.");
+    }
+}
+static void Vocales()
+{
+    Console.Write("Ingrese una palabra: ");
+    string palabra = Console.ReadLine();
+    int contador = 0;
+
+    foreach (char c in palabra)
+    {
+        if ("aeiouAEIOU".IndexOf(c) >= 0)
+        {
+            contador++;
+        }
+    }
+    Console.WriteLine($"Resultado: {contador}");
+}
+
+static void BuscadorFactorial()
+{
+    Console.Write("Ingrese un número: ");
+    if (int.TryParse(Console.ReadLine(), out int numero))
+    {
+        long factorial = 1;
+        for (int i = 2; i <= numero; i++)
+        {
+            factorial *= i;
+        }
+        Console.WriteLine($"Resultado: {factorial}");
     }
     else
     {

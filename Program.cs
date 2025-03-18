@@ -7,8 +7,10 @@
 // DiaDeLaSemana();
 // SalarioAnual();
 // Buscador();
-SumaDePares();
-DiferenciaDeFracciones();
+// SumaDePares();
+// DiferenciaDeFracciones();
+PromedioDeCuatro();
+ElMasPequeñoDe5();
 
 static void SolicitarYProcesarNumero()
 {
@@ -180,6 +182,53 @@ static void DiferenciaDeFracciones()
         int numerador = a * d - b * c;
         int denominador = b * d;
         Console.WriteLine($"Resultado: {numerador}/{denominador}");
+    }
+    else
+    {
+        Console.WriteLine("Entrada no válida.");
+    }
+}
+static void StringLength()
+{
+    Console.Write("Ingrese una palabra: ");
+    string palabra = Console.ReadLine();
+    Console.WriteLine($"Resultado: {palabra.Length}");
+}
+
+static void PromedioDeCuatro()
+{
+    Console.Write("Ingrese cuatro números separados por espacios: ");
+    string[] numeros = Console.ReadLine().Split(' ');
+
+    if (numeros.Length == 4 &&
+        double.TryParse(numeros[0], out double num1) &&
+        double.TryParse(numeros[1], out double num2) &&
+        double.TryParse(numeros[2], out double num3) &&
+        double.TryParse(numeros[3], out double num4))
+    {
+        double promedio = (num1 + num2 + num3 + num4) / 4;
+        Console.WriteLine($"Resultado: {promedio}");
+    }
+    else
+    {
+        Console.WriteLine("Entrada no válida.");
+    }
+}
+
+static void ElMasPequeñoDe5()
+{
+    Console.Write("Ingrese cinco números separados por espacios: ");
+    string[] numeros = Console.ReadLine().Split(' ');
+
+    if (numeros.Length == 5 &&
+        double.TryParse(numeros[0], out double num1) &&
+        double.TryParse(numeros[1], out double num2) &&
+        double.TryParse(numeros[2], out double num3) &&
+        double.TryParse(numeros[3], out double num4) &&
+        double.TryParse(numeros[4], out double num5))
+    {
+        double menor = Math.Min(num1, Math.Min(num2, Math.Min(num3, Math.Min(num4, num5))));
+        Console.WriteLine($"Resultado: {menor}");
     }
     else
     {

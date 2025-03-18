@@ -4,7 +4,9 @@
 // SolicitarYProcesarDosNumeros();
 // RaizOalCuadrado();
 // PerimetroCirculo();
-DiaDeLaSemana();
+// DiaDeLaSemana();
+SalarioAnual();
+Buscador();
 
 static void SolicitarYProcesarNumero()
 {
@@ -108,5 +110,47 @@ static void DiaDeLaSemana()
     else
     {
         Console.WriteLine("Entrada no válida.");
+    }
+}
+static void SalarioAnual()
+{
+    Console.Write("Ingrese su salario anual: ");
+    if (double.TryParse(Console.ReadLine(), out double salario))
+    {
+        if (salario > 12000)
+        {
+            double impuesto = (salario - 12000) * 0.15;
+            Console.WriteLine($"Resultado: {impuesto}");
+        }
+        else
+        {
+            Console.WriteLine("Resultado: No debe impuestos.");
+        }
+    }
+    else
+    {
+        Console.WriteLine("Entrada no válida.");
+    }
+}
+
+static void Buscador()
+{
+    Console.Write("Ingrese el primer número: ");
+    if (double.TryParse(Console.ReadLine(), out double numero1))
+    {
+        Console.Write("Ingrese el segundo número: ");
+        if (double.TryParse(Console.ReadLine(), out double numero2))
+        {
+            double residuo = numero1 % numero2;
+            Console.WriteLine($"Resultado: {residuo}");
+        }
+        else
+        {
+            Console.WriteLine("Entrada no válida para el segundo número.");
+        }
+    }
+    else
+    {
+        Console.WriteLine("Entrada no válida para el primer número.");
     }
 }
